@@ -1,0 +1,156 @@
+/* Cores e fontes */
+:root {
+    --fonte: 'Poppins', sans-serif;
+    --cor1: #F7E025;
+    --cor2: #dddddd; 
+}
+
+/* Universal */
+* {
+    margin: 0; padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+}
+
+/* Cor de fundo de todo documento */
+body {
+    background-color: white;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+/* Listas estilo */
+ul {
+    list-style-position: inside ;
+}
+
+#navbar {
+    border-right: 3px solid var(--cor1);
+}
+
+#nav-header {
+    position: fixed; top: 0; left: 0;
+    width: 320px;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    background-color: var(--cor1);
+}
+
+/* menu */
+#topicos {
+    margin-top: 117px;
+    position: fixed; top: 0; left: 0;
+    width: 320px;
+    height: 83.2%;
+    list-style: none;
+    overflow-y: scroll;
+    border-right: 4px solid var(--cor1);
+}
+
+#topicos li:last-child {
+   border: none;
+}
+
+.nav-section {
+    border-bottom: 1px solid var(--cor1);
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+}
+
+/* Formatação e estilização dos textos do conteúdo principal */
+#main-doc {
+    margin: 0 0 0 322px;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+.main-header {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Seções, paragrafos e listas justificadas */
+.main-section, p, li {
+    text-align: justify;
+}
+
+/* Seções */
+.main-section {
+    border-bottom: 2px solid var(--cor1);
+    margin-bottom: 15px;
+}
+
+/* Tópicos  */
+.main-ul {
+    max-width: 70%; margin-left: 60px;
+}
+
+/* Estilizações para tópicos e paragráfos  */
+p, ul {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilização para trechos de código */
+pre {
+    white-space: pre-line;
+    line-height: 2;
+    background-color: var(--cor2);
+    font-family: monospace;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    padding: 5px;
+
+    max-width: 500px;
+    margin-left: 30px;
+}
+
+/* útilmo seção da main */
+.ultima-main-section {
+    border: none;
+    margin: 0;
+}
+
+
+/* Medias Queries */ 
+@media (max-width: 750px) {
+   #navbar {
+        border: 4px solid var(--cor1);
+   }
+   
+    #topicos {
+        margin-top: 100px;
+        position: absolute;
+        height: 200px;
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px solid var(--cor1);
+   }
+
+   #nav-header {
+        position: absolute;
+        height: 100px;
+        width: 100%;
+        padding: 8px;
+   }
+   
+    #main-doc {
+        max-width: 99%;
+        margin: 300px auto 5px auto;
+   }
+}
